@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: nginx-service
 spec:
+  type: LoadBalancer
   selector:
     component: nginx-component
     purpose: practice
