@@ -22,6 +22,6 @@ spec:
     spec:
       containers:
       - name: nginxdele
-        image: nginx:{{ .Values.deployment.appVersion }}
+        image: "nginx:{{ .Values.deployment.appVersion }}"
 
        
