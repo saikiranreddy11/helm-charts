@@ -9,7 +9,7 @@ spec:
     purpose: practice
     environment: dev
   ports:
-    - port: 80
+    - port: {{ .Values.service.servicePort }}
       targetPort: 80
       protocol: TCP
       name: name-of-service-port

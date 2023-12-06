@@ -7,7 +7,7 @@ metadata:
     tier: frontend
 spec:
   # modify replicas according to your case
-  replicas: 1
+  replicas: {{ .Values.deployment.replicas }}
   selector:
     matchLabels:
       component: nginx-component
@@ -22,6 +22,6 @@ spec:
     spec:
       containers:
       - name: nginxdele
-        image: nginx
+        image: nginx:{{ .Values.deployment.appVersion }}
 
        

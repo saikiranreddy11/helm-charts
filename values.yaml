@@ -1,0 +1,5 @@
+deployment:
+  appVersion: latest
+  replicas: 3
+service:
+  servicePort: 80
